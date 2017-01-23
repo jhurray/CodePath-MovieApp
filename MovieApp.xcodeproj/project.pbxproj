@@ -15,6 +15,7 @@
 		790C0E1B1E36A3C900B659D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 790C0E191E36A3C900B659D8 /* LaunchScreen.storyboard */; };
 		790C0E271E36A4C100B659D8 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E261E36A4C100B659D8 /* MovieTableViewCell.m */; };
 		790C0E291E36A60D00B659D8 /* popcorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 790C0E281E36A60D00B659D8 /* popcorn.jpg */; };
+		790C0E2C1E36AEDA00B659D8 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E2B1E36AEDA00B659D8 /* MovieModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		790C0E251E36A4C100B659D8 /* MovieTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieTableViewCell.h; sourceTree = "<group>"; };
 		790C0E261E36A4C100B659D8 /* MovieTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieTableViewCell.m; sourceTree = "<group>"; };
 		790C0E281E36A60D00B659D8 /* popcorn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = popcorn.jpg; path = ../popcorn.jpg; sourceTree = "<group>"; };
+		790C0E2A1E36AEDA00B659D8 /* MovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
+		790C0E2B1E36AEDA00B659D8 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +78,8 @@
 				790C0E1C1E36A3C900B659D8 /* Info.plist */,
 				790C0E281E36A60D00B659D8 /* popcorn.jpg */,
 				790C0E0B1E36A3C900B659D8 /* Supporting Files */,
+				790C0E2A1E36AEDA00B659D8 /* MovieModel.h */,
+				790C0E2B1E36AEDA00B659D8 /* MovieModel.m */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -162,6 +167,7 @@
 				790C0E131E36A3C900B659D8 /* MovieListViewController.m in Sources */,
 				790C0E101E36A3C900B659D8 /* AppDelegate.m in Sources */,
 				790C0E271E36A4C100B659D8 /* MovieTableViewCell.m in Sources */,
+				790C0E2C1E36AEDA00B659D8 /* MovieModel.m in Sources */,
 				790C0E0D1E36A3C900B659D8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,6 +325,7 @@
 				790C0E211E36A3C900B659D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
