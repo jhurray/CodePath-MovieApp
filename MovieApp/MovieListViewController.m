@@ -9,6 +9,7 @@
 #import "MovieListViewController.h"
 #import "MovieTableViewCell.h"
 #import "MovieModel.h"
+#import <AFNetworking/UIImageView+AFNetworking.h>
 
 @interface MovieListViewController () <UITableViewDataSource>
 
@@ -86,7 +87,9 @@
     MovieModel *model = [self.movies objectAtIndex:indexPath.row];
     cell.titleLabel.text = model.title;
     cell.textView.text = model.movieDescription;
-    cell.posterView.image = [UIImage imageNamed:@"popcorn.jpg"];
+    cell.posterView.contentMode = UIViewContentModeScaleAspectFit;
+    [cell.posterView setImageWithURL:model.posterURL];
+    
     return cell;
 }
 
