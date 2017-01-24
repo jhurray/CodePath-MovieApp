@@ -11,10 +11,16 @@
 #import "MovieModel.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
+typedef NS_ENUM(NSInteger, MovieListType) {
+    MovieListTypeNowPlaying,
+    MovieListTypeTopRated,
+};
+
 @interface MovieListViewController () <UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSArray<MovieModel *> *movies;
+@property (nonatomic, assign) MovieListType type;
 
 @end
 
@@ -24,6 +30,17 @@
 {
     [super viewDidLoad];
     self.tableView.dataSource = self;
+    
+    static NSDictionary<NSString *, NSNumber *> *restorationIdentifierToTypeMapping;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        restorationIdentifierToTypeMapping = @{
+                                              @"now_playing": @(MovieListTypeNowPlaying),
+                                              @"top_rated": @(MovieListTypeTopRated),
+                                              };
+    });
+    self.type = restorationIdentifierToTypeMapping[self.restorationIdentifier].integerValue;
+    
     [self fetchMovies];
 }
 
@@ -31,8 +48,15 @@
 - (void)fetchMovies
 {
     NSString *apiKey = @"a07e22bc18f5cb106bfe4cc1f83ad8ed";
-    NSString *urlString =
-    [@"https://api.themoviedb.org/3/movie/now_playing?api_key=" stringByAppendingString:apiKey];
+    NSString *typePathComponent;
+    switch (self.type) {
+        case MovieListTypeNowPlaying:
+            typePathComponent = @"now_playing";
+            break;
+        case MovieListTypeTopRated:
+            typePathComponent = @"top_rated";
+        break;    }
+    NSString *urlString = [NSString stringWithFormat:@"https://api.themoviedb.org/3/movie/%@?api_key=%@", typePathComponent, apiKey];
     
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [[NSURLRequest alloc] initWithURL:url];

@@ -17,6 +17,7 @@
 		790C0E271E36A4C100B659D8 /* MovieTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E261E36A4C100B659D8 /* MovieTableViewCell.m */; };
 		790C0E291E36A60D00B659D8 /* popcorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 790C0E281E36A60D00B659D8 /* popcorn.jpg */; };
 		790C0E2C1E36AEDA00B659D8 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E2B1E36AEDA00B659D8 /* MovieModel.m */; };
+		790C0E2F1E36DD2700B659D8 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		790C0E281E36A60D00B659D8 /* popcorn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = popcorn.jpg; path = ../popcorn.jpg; sourceTree = "<group>"; };
 		790C0E2A1E36AEDA00B659D8 /* MovieModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieModel.h; sourceTree = "<group>"; };
 		790C0E2B1E36AEDA00B659D8 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
+		790C0E2D1E36DD2700B659D8 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
 		FE30DA70F70585E8C04DD3D8 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +99,8 @@
 				790C0E0B1E36A3C900B659D8 /* Supporting Files */,
 				790C0E2A1E36AEDA00B659D8 /* MovieModel.h */,
 				790C0E2B1E36AEDA00B659D8 /* MovieModel.m */,
+				790C0E2D1E36DD2700B659D8 /* MovieDetailViewController.h */,
+				790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				790C0E2F1E36DD2700B659D8 /* MovieDetailViewController.m in Sources */,
 				790C0E131E36A3C900B659D8 /* MovieListViewController.m in Sources */,
 				790C0E101E36A3C900B659D8 /* AppDelegate.m in Sources */,
 				790C0E271E36A4C100B659D8 /* MovieTableViewCell.m in Sources */,
