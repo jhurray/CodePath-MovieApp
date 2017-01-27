@@ -18,6 +18,9 @@
 		790C0E291E36A60D00B659D8 /* popcorn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 790C0E281E36A60D00B659D8 /* popcorn.jpg */; };
 		790C0E2C1E36AEDA00B659D8 /* MovieModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E2B1E36AEDA00B659D8 /* MovieModel.m */; };
 		790C0E2F1E36DD2700B659D8 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */; };
+		790C0E5A1E3A87DE00B659D8 /* MoviePosterCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E591E3A87DE00B659D8 /* MoviePosterCollectionViewCell.m */; };
+		790C0E5D1E3AE2F000B659D8 /* MovieFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E5C1E3AE2F000B659D8 /* MovieFetcher.m */; };
+		790C0E641E3AE4A700B659D8 /* UIImageView+FadeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 790C0E631E3AE4A700B659D8 /* UIImageView+FadeUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,12 @@
 		790C0E2B1E36AEDA00B659D8 /* MovieModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieModel.m; sourceTree = "<group>"; };
 		790C0E2D1E36DD2700B659D8 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
 		790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		790C0E581E3A87DE00B659D8 /* MoviePosterCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePosterCollectionViewCell.h; sourceTree = "<group>"; };
+		790C0E591E3A87DE00B659D8 /* MoviePosterCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePosterCollectionViewCell.m; sourceTree = "<group>"; };
+		790C0E5B1E3AE2F000B659D8 /* MovieFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieFetcher.h; sourceTree = "<group>"; };
+		790C0E5C1E3AE2F000B659D8 /* MovieFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieFetcher.m; sourceTree = "<group>"; };
+		790C0E621E3AE4A700B659D8 /* UIImageView+FadeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FadeUtils.h"; sourceTree = "<group>"; };
+		790C0E631E3AE4A700B659D8 /* UIImageView+FadeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FadeUtils.m"; sourceTree = "<group>"; };
 		FE30DA70F70585E8C04DD3D8 /* Pods-MovieApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MovieApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MovieApp/Pods-MovieApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +110,12 @@
 				790C0E2B1E36AEDA00B659D8 /* MovieModel.m */,
 				790C0E2D1E36DD2700B659D8 /* MovieDetailViewController.h */,
 				790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */,
+				790C0E581E3A87DE00B659D8 /* MoviePosterCollectionViewCell.h */,
+				790C0E591E3A87DE00B659D8 /* MoviePosterCollectionViewCell.m */,
+				790C0E5B1E3AE2F000B659D8 /* MovieFetcher.h */,
+				790C0E5C1E3AE2F000B659D8 /* MovieFetcher.m */,
+				790C0E621E3AE4A700B659D8 /* UIImageView+FadeUtils.h */,
+				790C0E631E3AE4A700B659D8 /* UIImageView+FadeUtils.m */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -246,10 +261,13 @@
 			files = (
 				790C0E2F1E36DD2700B659D8 /* MovieDetailViewController.m in Sources */,
 				790C0E131E36A3C900B659D8 /* MovieListViewController.m in Sources */,
+				790C0E5D1E3AE2F000B659D8 /* MovieFetcher.m in Sources */,
 				790C0E101E36A3C900B659D8 /* AppDelegate.m in Sources */,
 				790C0E271E36A4C100B659D8 /* MovieTableViewCell.m in Sources */,
+				790C0E5A1E3A87DE00B659D8 /* MoviePosterCollectionViewCell.m in Sources */,
 				790C0E2C1E36AEDA00B659D8 /* MovieModel.m in Sources */,
 				790C0E0D1E36A3C900B659D8 /* main.m in Sources */,
+				790C0E641E3AE4A700B659D8 /* UIImageView+FadeUtils.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
