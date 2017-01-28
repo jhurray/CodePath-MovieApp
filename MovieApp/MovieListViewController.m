@@ -84,6 +84,9 @@
     collectionView.hidden = YES;
     self.collectionView = collectionView;
     
+    // This is a block. Think of it as a scoped function within this method
+    // This block will create a refresh control, add it to the scroll view (table or collection), and return it
+    // This promotes code reusability. You could also accomplish this in a helper method
     UIRefreshControl *(^setupRefreshControlWithScrolView)(UIScrollView *) = ^UIRefreshControl *(UIScrollView *scrollView) {
         UIRefreshControl *control = [[UIRefreshControl alloc] init];
         [scrollView addSubview:control];
@@ -135,6 +138,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+    // This will only be triggered from the tableView segue
     UITableViewCell *cell = sender;
     NSIndexPath *indexPath = [self.tableView indexPathForCell:cell];
     MovieModel *model = [self.movies objectAtIndex:indexPath.row];
@@ -220,6 +224,7 @@
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    // A programatic way to show a view controller (from the collectionView)
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     MovieDetailViewController *detailViewController = [storyboard instantiateViewControllerWithIdentifier:@"MovieDetailViewController"];
     detailViewController.model = self.movies[indexPath.item];

@@ -51,7 +51,10 @@
 
 - (void)resizeLabel:(UILabel*)label
 {
-    [label sizeToFit];
+    NSAttributedString *string = [[NSAttributedString alloc] initWithString:label.text attributes:@{NSFontAttributeName:label.font}];
+    CGSize size = [string boundingRectWithSize:CGSizeMake(label.bounds.size.width, 10000) options:NSStringDrawingUsesLineFragmentOrigin     context:nil].size;
+    
+    label.frame = CGRectMake(label.frame.origin.x, label.frame.origin.y, size.width, size.height);
 }
 
 @end

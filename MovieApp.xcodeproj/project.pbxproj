@@ -94,28 +94,18 @@
 		790C0E0A1E36A3C900B659D8 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				790C0E661E3BC85000B659D8 /* ViewControllers */,
+				790C0E651E3BC83900B659D8 /* Cells */,
+				790C0E671E3BC86000B659D8 /* Network */,
+				790C0E681E3BC86F00B659D8 /* Utilities */,
 				790C0E0E1E36A3C900B659D8 /* AppDelegate.h */,
 				790C0E0F1E36A3C900B659D8 /* AppDelegate.m */,
-				790C0E111E36A3C900B659D8 /* MovieListViewController.h */,
-				790C0E121E36A3C900B659D8 /* MovieListViewController.m */,
-				790C0E251E36A4C100B659D8 /* MovieTableViewCell.h */,
-				790C0E261E36A4C100B659D8 /* MovieTableViewCell.m */,
 				790C0E141E36A3C900B659D8 /* Main.storyboard */,
 				790C0E171E36A3C900B659D8 /* Assets.xcassets */,
 				790C0E191E36A3C900B659D8 /* LaunchScreen.storyboard */,
 				790C0E1C1E36A3C900B659D8 /* Info.plist */,
 				790C0E281E36A60D00B659D8 /* popcorn.jpg */,
 				790C0E0B1E36A3C900B659D8 /* Supporting Files */,
-				790C0E2A1E36AEDA00B659D8 /* MovieModel.h */,
-				790C0E2B1E36AEDA00B659D8 /* MovieModel.m */,
-				790C0E2D1E36DD2700B659D8 /* MovieDetailViewController.h */,
-				790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */,
-				790C0E581E3A87DE00B659D8 /* MoviePosterCollectionViewCell.h */,
-				790C0E591E3A87DE00B659D8 /* MoviePosterCollectionViewCell.m */,
-				790C0E5B1E3AE2F000B659D8 /* MovieFetcher.h */,
-				790C0E5C1E3AE2F000B659D8 /* MovieFetcher.m */,
-				790C0E621E3AE4A700B659D8 /* UIImageView+FadeUtils.h */,
-				790C0E631E3AE4A700B659D8 /* UIImageView+FadeUtils.m */,
 			);
 			path = MovieApp;
 			sourceTree = "<group>";
@@ -126,6 +116,48 @@
 				790C0E0C1E36A3C900B659D8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		790C0E651E3BC83900B659D8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				790C0E251E36A4C100B659D8 /* MovieTableViewCell.h */,
+				790C0E261E36A4C100B659D8 /* MovieTableViewCell.m */,
+				790C0E581E3A87DE00B659D8 /* MoviePosterCollectionViewCell.h */,
+				790C0E591E3A87DE00B659D8 /* MoviePosterCollectionViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		790C0E661E3BC85000B659D8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				790C0E111E36A3C900B659D8 /* MovieListViewController.h */,
+				790C0E121E36A3C900B659D8 /* MovieListViewController.m */,
+				790C0E2D1E36DD2700B659D8 /* MovieDetailViewController.h */,
+				790C0E2E1E36DD2700B659D8 /* MovieDetailViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		790C0E671E3BC86000B659D8 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				790C0E2A1E36AEDA00B659D8 /* MovieModel.h */,
+				790C0E2B1E36AEDA00B659D8 /* MovieModel.m */,
+				790C0E5B1E3AE2F000B659D8 /* MovieFetcher.h */,
+				790C0E5C1E3AE2F000B659D8 /* MovieFetcher.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
+		790C0E681E3BC86F00B659D8 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				790C0E621E3AE4A700B659D8 /* UIImageView+FadeUtils.h */,
+				790C0E631E3AE4A700B659D8 /* UIImageView+FadeUtils.m */,
+			);
+			name = Utilities;
 			sourceTree = "<group>";
 		};
 		9F5151C7E2F8E528F70F2A96 /* Frameworks */ = {
